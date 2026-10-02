@@ -1,0 +1,94 @@
+{
+  "name": "Reno-Tahoe-Carson minimal regional map",
+  "generated_utc": "2026-10-01T21:51:45.240800+00:00",
+  "source_retrieved_utc": "2026-10-01T21:46:04.153549+00:00",
+  "service_refresh": "July 2026 (service metadata; individual feature dates vary)",
+  "bounds_wsen": [
+    -121.0,
+    38.0,
+    -118.5,
+    40.8
+  ],
+  "demo": false,
+  "attribution": "USGS TNM / Census TIGER / USFS - public domain",
+  "license": "US public domain (USGS TNM-produced raw vectors)",
+  "source_manifest": "source-manifest.json",
+  "projection": "Spherical AEQD, R=6371008.8m; stored WGS84 geographic degrees * 1e7",
+  "simplification": {
+    "tolerance_m": 100,
+    "preserve_topology_per_feature": true,
+    "reference_center_lat_lon": [
+      39.4,
+      -119.8
+    ],
+    "notes": "Original source scale varies; no network-routing topology claim. Clip in geographic bounds before and after simplification."
+  },
+  "selection": {
+    "roads": "USGS 1:1,000,000 road layer; no local street grid",
+    "water": "USGS small-scale waterbody polygons >=2 square kilometres",
+    "rivers": "Named Truckee/Carson/Walker rivers and listed forks, StreamRiver FCODE 460xx only; artificial paths omitted",
+    "airports": "USGS actual runway polygon outlines, not invented airport symbols"
+  },
+  "raw_vector_bytes": 2988452,
+  "layers": {
+    "roads": {
+      "source_features": 579,
+      "output_parts": 580,
+      "repaired_invalid_source_geometry_ids": [],
+      "excluded_non_stream_river_paths": 0
+    },
+    "runways": {
+      "source_features": 79,
+      "output_parts": 79,
+      "repaired_invalid_source_geometry_ids": [],
+      "excluded_non_stream_river_paths": 0
+    },
+    "water": {
+      "source_features": 85,
+      "output_parts": 89,
+      "repaired_invalid_source_geometry_ids": [
+        445563
+      ],
+      "excluded_non_stream_river_paths": 0
+    },
+    "rivers": {
+      "source_features": 612,
+      "output_parts": 536,
+      "repaired_invalid_source_geometry_ids": [],
+      "excluded_non_stream_river_paths": 76
+    }
+  },
+  "feature_count": 1525,
+  "point_count": 11677,
+  "payload_crc32": "f80a7f43",
+  "pack_bytes": 130188,
+  "pack_sha256": "42225ef742d44995ad4b9d16cd92a5affb95404f67e9dfcc2abf7324ff72b56d",
+  "geojson_sha256": "8e104b6f937598603555b76feda969ce9959e874a6d5ef9b65f1a467e68b5fd1",
+  "public_test_points": {
+    "TRK": {
+      "longitude": -120.13898108836628,
+      "latitude": 39.32006389725885,
+      "source": "centroid average of USGS runway polygons; public test point, not a saved device center"
+    },
+    "RNO": {
+      "longitude": -119.76804624019366,
+      "latitude": 39.49883976915911,
+      "source": "centroid average of USGS runway polygons; public test point, not a saved device center"
+    },
+    "CXP": {
+      "longitude": -119.73257401043894,
+      "latitude": 39.19231150283065,
+      "source": "centroid average of USGS runway polygons; public test point, not a saved device center"
+    },
+    "TVL": {
+      "longitude": -119.99535482550442,
+      "latitude": 38.893903972421946,
+      "source": "centroid average of USGS runway polygons; public test point, not a saved device center"
+    }
+  },
+  "tool_versions": {
+    "python": "3.12.10",
+    "shapely": "2.1.2",
+    "pyproj": "3.8.0"
+  }
+}

@@ -1,0 +1,27 @@
+# Source credits and permission to cache
+
+This pack is derived from public-domain raw vector data produced/distributed by
+USGS The National Map. It contains no OSM/Google/rendered map tiles and no borrowed
+commercial cartography. Offline storage and derived rendering are permitted by the
+USGS public-domain policy. Credit: USGS TNM; U.S. Census Bureau TIGER/Line; U.S. Forest
+Service; FAA-origin runway data distributed through USGS.
+
+- https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+- https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted
+- https://carto.nationalmap.gov/arcgis/rest/services/transportation/MapServer?f=pjson
+- https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer?f=pjson
+
+Both service descriptions explicitly identify their downloadable vector datasets as
+public domain. Exact query URLs, selected object IDs and source checksums are in
+source-manifest.json. Raw source files remain in the build workspace. Retrieved 2026-10-01; service
+metadata says refreshed July 2026, while individual geometry dates can be much older.
+Download date is not a claim that every road/shoreline was surveyed recently.
+
+Roads use the coarse 1:1,000,000-scale layer. Water polygons are >=2 km2 and may include
+seasonal waterbody/playa outlines. Rivers are named Truckee/Carson/Walker StreamRiver
+features, with artificial flow-network paths omitted. Runways are actual source polygon
+outlines. Geometry is simplified at 100 m in a metric spherical-AEQD projection with
+per-feature topology preservation. One invalid source water geometry (445563) was
+repaired with Shapely make_valid and recorded in metadata. This is a general reference
+basemap, not navigation/survey data; local streets, terrain, filled water and place
+labels are not part of this minimal pack.
